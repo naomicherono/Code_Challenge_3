@@ -23,3 +23,7 @@ function showMovieDetails(movie) {
     document.getElementById('title').textContent = movie.title;
     document.getElementById('runtime').textContent = `Runtime: ${movie.runtime} minutes`;
     document.getElementById('showtime').textContent = `Showtime: ${movie.showtime}`;
+
+     // Calculate available tickets
+  const availableTickets = movie.capacity - movie.tickets_sold;
+  document.getElementById('tickets').textContent = `Available Tickets: ${availableTickets}`;
