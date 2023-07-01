@@ -27,3 +27,10 @@ function showMovieDetails(movie) {
      // Calculate available tickets
   const availableTickets = movie.capacity - movie.tickets_sold;
   document.getElementById('tickets').textContent = `Available Tickets: ${availableTickets}`;
+
+  // Disable buy button if sold out
+  const buyButton = document.getElementById('buy-ticket');
+  buyButton.disabled = availableTickets === 0;
+  buyButton.textContent = availableTickets === 0 ? 'Sold Out' : 'Buy Ticket';
+  buyButton.addEventListener('click', () => buyTicket(movie));
+}
