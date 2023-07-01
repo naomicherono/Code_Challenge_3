@@ -15,3 +15,11 @@ fetch('http://localhost:3000/films')
         // Show details for the first movie
     showMovieDetails(data[0]);
 });
+
+// Function to show movie details
+function showMovieDetails(movie) {
+    // Update movie details
+    document.getElementById('poster').src = movie.poster;
+    document.getElementById('title').textContent = movie.title;
+    document.getElementById('runtime').textContent = `Runtime: ${movie.runtime} minutes`;
+    document.getElementById('showtime').textContent = `Showtime: ${movie.showtime}`;
