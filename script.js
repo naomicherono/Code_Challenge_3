@@ -39,4 +39,10 @@ function showMovieDetails(movie) {
 function buyTicket(movie) {
     // Calculate available tickets
     const availableTickets = movie.capacity - movie.tickets_sold;
+
+     // Check if tickets are available
+  if (availableTickets > 0) {
+    // Update tickets sold
+    movie.tickets_sold++;
+    document.getElementById('tickets').textContent = `Available Tickets: ${availableTickets - 1}`;
   
