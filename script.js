@@ -45,4 +45,16 @@ function buyTicket(movie) {
     // Update tickets sold
     movie.tickets_sold++;
     document.getElementById('tickets').textContent = `Available Tickets: ${availableTickets - 1}`;
+
+
+    // Persist the updated number of tickets_sold on the server
+    // You need to implement the server-side logic to handle this
+
+    // Check if the movie is now sold out
+    if (movie.tickets_sold === movie.capacity) {
+        document.getElementById('buy-ticket').disabled = true;
+        document.getElementById('buy-ticket').textContent = 'Sold Out';
+      }
+    }
+  }
   
