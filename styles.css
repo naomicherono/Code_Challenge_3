@@ -40,3 +40,35 @@
   .movie-details {
     flex: 2;
   }
+  .card-films {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: 200px;
+    font-size: 20px;
+
+  }
+  li:hover{
+    color: #007bff;
+    cursor:progress;
+  }
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: 300px;
+  }
+
+  
+  .card-body {
+    display: flex;
+  }
+  
+  .card-body img {
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 20px;
+  }
