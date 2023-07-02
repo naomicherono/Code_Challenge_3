@@ -8,7 +8,7 @@ Naomi Cherono
 ```
 ## Project Description
 ```
-This app alows the user to be able to choose a movie of their choice,once the buyer click on the movie ,the movie card or rather poster will apper then it will display the show time and the availabe tickets ,once the user clicks on the buy ticket button the available tickets will decrease and if the movies are all out of order the click button will display sold out in red .
+This app allows the user to be able to choose a movie of their choice,once the buyer clicks on the movie ,the movie card or rather poster will appear then it will display the show time and the availabe tickets ,once the user clicks on the buy ticket button the available tickets will decrease and if the movies are all out of order the click button will display sold out in red .
 ```
 
 ## Project SetUp and Instructions
